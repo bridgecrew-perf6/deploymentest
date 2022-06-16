@@ -1,0 +1,4 @@
+// PEM FILE RESTRICTION COMMANDS for windows
+icacls.exe your_key_name.pem /reset
+icacls.exe your_key_name.pem /grant:r "$($env:username):(r)"
+icacls.exe your_key_name.pem /inheritance:r
